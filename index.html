@@ -1,23 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>MindSpace - Mini Wellbeing Social</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>MindSpace</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>MindSpace 🌿</h1>
-<p>A small place to share thoughts and support.</p>
+<div class="container">
 
-<div class="post-box">
-<textarea id="postInput" placeholder="Share something positive..."></textarea>
-<button onclick="addPost()">Post</button>
+<h1>🌿 MindSpace</h1>
+<p class="tag">Share thoughts. Support each other.</p>
+
+<div class="card">
+
+<textarea id="postInput" placeholder="How are you feeling today?"></textarea>
+
+<div class="buttons">
+<button onclick="addPost()">Share</button>
+<button onclick="clearPosts()">Clear Feed</button>
 </div>
 
-<h2>Community Feed</h2>
+</div>
+
+<h2>Community</h2>
 
 <div id="feed"></div>
+
+</div>
 
 <script src="script.js"></script>
 
